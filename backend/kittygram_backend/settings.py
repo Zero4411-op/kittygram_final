@@ -111,3 +111,5 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
 
 }
+
+STATIC_ROOT = BASE_DIR / 'collected_static'
