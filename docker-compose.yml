@@ -24,6 +24,8 @@ services:
   frontend:
     image: zero44/kittygram_frontend:latest
     env_file: .env
+    environment:
+      - PUBLIC_URL=/kittygram_static
     volumes:
       - static:/frontend_static
     command: sh -c "npm run build && cp -r /app/build/. /frontend_static/"
