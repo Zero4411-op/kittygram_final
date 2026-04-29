@@ -120,4 +120,6 @@ REST_FRAMEWORK = {
     ],
 }
 
+REST_FRAMEWORK['EXCEPTION_HANDLER'] = 'rest_framework.views.exception_handler'
+
 STATIC_ROOT = BASE_DIR / 'collected_static'
